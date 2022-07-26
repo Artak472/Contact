@@ -7,24 +7,20 @@
 </head>
 <body>
 
-	<form>
-
-		<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Contact form">
-		<input type="hidden" name="admin_email" value="engibaryan001@gmail.com">
-		<input type="hidden" name="form_subject" value="Form Subject">
-		<!-- END Hidden Required Fields -->
-
-		<input type="text" name="Name" placeholder="You name..." required><br>
-		<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-		<input type="text" name="Phone" placeholder="You phone..."><br>
-		<button>Send</button>
-
+	<form
+		action="https://formspree.io/f/meqnywzb"
+		method="POST"
+		>
+		<label>
+			Your email:
+			<input type="email" name="email">
+		</label>
+		<label>
+			Your message:
+			<textarea name="message"></textarea>
+		</label>
+		<!-- your other form fields go here -->
+		<button type="submit">Send</button>
 	</form>
-	
-	<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-	
-	<script src="main.js"></script>
-
 </body>
 </html>
